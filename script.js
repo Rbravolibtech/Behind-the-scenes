@@ -179,4 +179,38 @@ friend.age = 27;
 console.log('friend', friend);
 console.log('Me', me);
 
-/*========== REGULAR FUNCTIONS VS ARROW FUNCTIONS ==========*/
+/*========== PRIMITIVES VS OBJECTS ==========*/
+
+//PRIMITIVE TYPES
+
+let lastName = 'WilliaMs';
+let oldLastName = lastName;
+lastName = 'DaViS';
+console.log(lastName, oldLastName);
+
+//REFERENCE TYPES
+const jessica = {
+  firstName: 'jessica',
+  lastName: ' WiLLiAms',
+  age: 27,
+};
+
+const marriedJessica = jessica;
+marriedJessica.lastName = 'DavIs';
+console.log('Before Marriage', jessica);
+console.log('After MaRRiage', marriedJessica);
+
+//COPYING OBJECTS
+
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+console.log('Before marriage:', jessica2);
+console.log('After marriage: ', jessicaCopy);
