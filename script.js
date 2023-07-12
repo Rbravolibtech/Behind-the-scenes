@@ -117,7 +117,7 @@ matilda.calcAge();
 const f = jonas.calcAge;
 f();
 /*========== REGULAR FUNCTIONS VS ARROW FUNCTIONS ==========*/
-
+/*
 // var firstName = 'Matilda';
 const jonas = {
   firstName: 'Jonas',
@@ -161,3 +161,22 @@ var addArrow = (a, b) => {
   return a + b;
 };
 addArrow(2, 5, 8);
+
+/*========== REGULAR FUNCTIONS VS ARROW FUNCTIONS ==========*/
+/*
+let age = 30;
+let oldAge = age;
+age = 31;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+  name: 'Jonas',
+  age: 30,
+};
+const friend = me;
+friend.age = 27;
+console.log('friend', friend);
+console.log('Me', me);
+
+/*========== REGULAR FUNCTIONS VS ARROW FUNCTIONS ==========*/
